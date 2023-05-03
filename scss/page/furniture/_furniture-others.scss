@@ -1,0 +1,64 @@
+@use "../../global" as g;
+
+/*!
+page > furniture > furniture-others
+----------------------------
+*/
+.furniture-others-item {
+    background-color: var(--color-bg-secondary);
+    padding: 28px;
+
+    &:not(:first-child) {
+        margin-top: 32px;
+    }
+
+    @include g.mq() {
+        display: flex;
+        align-items: center;
+    }
+}
+.furniture-others-item-title {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--color-border-main-brown);
+
+    @include g.mq() {
+        flex-shrink: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+        width: 25%;
+    }
+
+    h2 {
+        @include g.mq() {
+            text-align: left;
+        }
+    }
+}
+.furniture-others-item-inner {
+    @include g.mq() {
+        border-left: 1px solid var(--color-border-main-brown);
+        padding-left: 64px;
+    }
+}
+.furniture-others-item-description {
+    margin-top: 32px;
+
+    span {
+        display: inline-block;
+    }
+
+    @include g.mq() {
+        margin-top: 0;
+    }
+}
+.furniture-others-link {
+    margin-top: 32px;
+
+    a {
+        justify-content: center;
+
+        @include g.mq() {
+            justify-content: flex-start;
+        }
+    }
+}

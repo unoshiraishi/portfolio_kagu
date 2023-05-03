@@ -1,0 +1,70 @@
+@use "../global" as g;
+
+/*!
+component > form > text
+----------------------
+*/
+.c-input-text {
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--color-bg-secondary);
+}
+
+/*!
+component > form > textarea
+----------------------
+*/
+.c-textarea {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background-color: var(--color-bg-secondary);
+}
+
+/*!
+component > form > checkbox
+----------------------
+*/
+.c-input-checkbox:checked + .c-input-checkbox-text::before {
+    background-color: var(--color-bg-accent);
+}
+
+.c-input-checkbox:checked + .c-input-checkbox-text::after {
+    content: "";
+    position: absolute;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    left: 0.55em;
+    top: 0.65em;
+    width: 0.5em;
+    height: 0.75em;
+    transform: translateY(-2px) rotate(45deg);
+
+    @include g.mq(){
+        left: 0.7em;
+        top: 0.55em;
+        width: 0.7em;
+        height: 0.95em;
+    }
+}
+.c-input-checkbox-text {
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.c-input-checkbox-text:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    flex-shrink: 0;
+    background-color: var(--color-bg-secondary);
+
+    @include g.mq() {
+        width: 32px;
+        height: 32px;
+    }
+}

@@ -1,0 +1,51 @@
+@use "../../global" as g;
+
+/*!
+page > recruit > recruit
+----------------------------
+*/
+.recruit-table-row {
+    letter-spacing: 0.05em;
+    padding: 24px 0;
+    display: block;
+    border-top: 1px solid var(--color-border-main-brown);
+
+    &:last-child {
+        border-bottom: 1px solid var(--color-border-main-brown);
+    }
+
+    @include g.mq() {
+        padding: 32px 0;
+        display: flex;
+    }
+}
+.recruit-tabel-header,
+.recruit-table-data {
+    display: block;
+}
+.recruit-tabel-header {
+    font-weight: 500;
+
+    @include g.mq() {
+        width: 30%;
+    }
+}
+.recruit-table-data {
+    padding-top: 8px;
+
+    span {
+        display: block;
+    }
+}
+.recruit-table-data-secondary {
+    line-height: 1.4;
+    color: var(--color-font-subtitle);
+}
+.recruit-button {
+    margin-top: 32px;
+    text-align: center;
+
+    @include g.mq() {
+        margin-top: 64px;
+    }
+}

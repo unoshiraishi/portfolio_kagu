@@ -1,0 +1,11 @@
+@use "../global" as g;
+
+/*!
+component > date
+----------------------
+*/
+.c-date {
+    font-size: 14px;
+    font-family: var(--font-family-english);
+    font-weight: bold;
+}

@@ -1,0 +1,58 @@
+@use "../../global" as g;
+
+/*!
+page > store > store
+----------------------------
+*/
+.store-item {
+    @include g.mq() {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &:not(:first-child) {
+        margin-top: 64px;
+
+        @include g.mq() {
+            margin-top: 88px;
+            flex-direction: row-reverse;
+        }
+    }
+}
+.store-item-img {
+    @include g.mq() {
+        flex-shrink: 0;
+        width: 48%;
+    }
+}
+.store-item-text {
+    margin-top: 32px;
+
+    @include g.mq() {
+        flex-shrink: 0;
+        width: 48%;
+        margin-top: 0;
+    }
+}
+.store-item-desctiption {
+    letter-spacing: 0.05em;
+    margin-top: 24px;
+    line-height: 2;
+
+    span {
+        display: inline-block;
+    }
+
+    @include g.mq() {
+        margin-top: 40px;
+    }
+}
+.store-item-button {
+    margin-top: 24px;
+    text-align: center;
+
+    @include g.mq() {
+        margin-top: 56px;
+    }
+}

@@ -1,0 +1,77 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-kv
+----------------------------
+*/
+.top-kv-inner {
+    position: relative;
+}
+.top-kv-copy {
+    position: absolute;
+    z-index: var(--z-index-default);
+    top: 40%;
+    transform: translateY(-50%);
+    left: 5%;
+    font-size: 24px;
+    font-family: var(--font-family-serif);
+    color: var(--color-font-white);
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 20px rgba(0,0,0,.2);
+
+    span {
+        display: block;
+
+        @include g.mq() {
+            display: inline-block;
+        }
+    }
+
+    @include g.mq() {
+        font-size: 36px;
+    }
+}
+.top-kv-slider {
+    overflow-x: hidden;
+}
+.top-kv-slider-item {
+    source,
+    img {
+        height: 60vh;
+        object-fit: cover;
+
+        @include g.mq() {
+            height: 612px;
+        }
+    }
+}
+
+/* slick.js */
+.slick-dotted.slick-slider {
+    margin-bottom: 0!important;
+}
+.slick-dots {
+    bottom: 72px!important;
+
+    @include g.mq() {
+        bottom: 116px!important;
+    }
+
+    li {
+        width: 32px!important;
+
+        button::before {
+            font-size: 32px!important;
+            opacity: 1;
+            color: var(--color-bg-secondary)!important;
+        }
+    }
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: var(--color-bg-accent)!important;
+}
+
+

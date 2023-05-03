@@ -1,0 +1,52 @@
+@use "../global" as g;
+
+/*!
+component > link
+----------------------
+*/
+.c-link {
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    transition: opacity .3s;
+
+    &:hover {
+        @include g.mq() {
+            opacity: 0.7;
+        }
+    }
+
+    &--arrow {
+        &::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 5px;
+            background-image: url(/img/common/arrow_black@2x.png);
+            background-image: image-set(url(/img/common/arrow_black.png) 1x, url(/img/common/arrow_black@2x.png) 2x);
+            background-image: -webkit-image-set(url(/img/common/arrow_black.png) 1x, url(/img/common/arrow_black@2x.png) 2x);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+            margin-left: 8px;
+        }
+    }
+
+    &--external {
+        &::after {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 13px;
+            background-image: url(/img/common/icon_link@2x.png);
+            background-image: image-set(url(/img/common/icon_link.png) 1x, url(/img/common/icon_link@2x.png) 2x);
+            background-image: -webkit-image-set(url(/img/common/icon_link.png) 1x, url(/img/common/icon_link@2x.png) 2x);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 13px;
+            margin-left: 8px;
+        }
+    }
+}

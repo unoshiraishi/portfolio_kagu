@@ -1,0 +1,40 @@
+@use "../global" as g;
+
+/*!
+component >  breadcrumbs
+----------------------
+*/
+.c-breadcrumbs {
+    background-color: var(--color-bg-breadcrumbs);
+    height: 32px;
+    display: flex;
+    align-items: center;
+
+    @include g.mq() {
+        height: 40px;
+    }
+}
+.c-breadcrumbs-list {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    gap: 16px;
+    align-items: center;
+}
+.c-breadcrumbs-list::-webkit-scrollbar {
+    display: none;
+}
+.c-breadcrumbs-item {
+    white-space: nowrap;
+    color: var(--color-font-white);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+
+    &:not(:first-child) {
+        &::before {
+            content: ">";
+            margin-right: 16px;
+        }
+    }
+}
+

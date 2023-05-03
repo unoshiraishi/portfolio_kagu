@@ -1,0 +1,37 @@
+@use "../global" as g;
+
+/*!
+component > recruit
+----------------------
+*/
+.c-recruit {
+    color: var(--color-font-white);
+    background-image: url(/img/common/bg_recruit-sp@2x.jpg);
+    background-image: image-set(url(/img/common/bg_recruit-sp.jpg) 1x, url(/img/common/bg_recruit-sp@2x.jpg) 2x);
+    background-image: -webkit-image-set(url(/img/common/bg_recruit-sp.jpg) 1x, url(/img/common/bg_recruit-sp@2x.jpg) 2x);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+
+    @include g.mq() {
+        background-image: url(/img/common/bg_recruit@2x.jpg);
+        background-image: image-set(url(/img/common/bg_recruit.jpg) 1x, url(/img/common/bg_recruit@2x.jpg) 2x);
+        background-image: -webkit-image-set(url(/img/common/bg_recruit.jpg) 1x, url(/img/common/bg_recruit@2x.jpg) 2x);
+        padding: 80px 0;
+    }
+}
+.c-recruit-text {
+    text-align: center;
+
+    span {
+        display: block;
+    }
+}
+.c-recruit-button {
+    text-align: center;
+    margin-top: 32px;
+
+    @include g.mq() {
+        margin-top: 56px;
+    }
+}

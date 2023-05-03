@@ -1,0 +1,77 @@
+@use "../global" as g;
+
+/*!
+component > pagination
+----------------------
+*/
+.c-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    @include g.mq() {
+        margin-top: 48px;
+    }
+}
+.c-pagination-item {
+    color: var(--color-font-subtitle);
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-font-subtitle);
+    font-size: 14px;
+
+    @include g.mq() {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:not(:first-child) {
+        margin-left: 8px;
+    }
+
+    &--prev {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 6px;
+            height: 6px;
+            border-top: 1px solid var(--color-font-subtitle);
+            border-right: 1px solid var(--color-font-subtitle);
+            transform: rotate(-135deg);
+        }
+    }
+
+    &--next {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 6px;
+            height: 6px;
+            border-top: 1px solid var(--color-font-subtitle);
+            border-right: 1px solid var(--color-font-subtitle);
+            transform: rotate(45deg);
+        }
+    }
+
+    &.is-pagination-active {
+        background-color: var(--color-font-subtitle);
+        color: var(--color-font-white);
+    }
+}

@@ -1,0 +1,64 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-news
+----------------------------
+*/
+.top-news {
+    background-color: var(--color-bg-secondary);
+    position: relative;
+    height: 670px;
+
+    @include g.mq(sm) {
+        height: 650px;
+    }
+
+    @include g.mq() {
+        height: 616px;
+    }
+}
+.top-news-wrapper {
+    position: absolute;
+    background-color: var(--color-bg-base);
+    top: -48px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px 20px;
+
+
+    @include g.mq() {
+        top: -80px;
+        max-width: 960px;
+        padding: 80px;
+    }
+}
+.top-news-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 28px;
+
+    @include g.mq() {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+    }
+}
+.top-news-item-text {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+
+    @include g.mq() {
+        margin-top: 8px;
+    }
+}
+.top-news-button {
+    text-align: center;
+    margin-top: 32px;
+
+    @include g.mq() {
+        margin-top: 64px;
+    }
+}
+

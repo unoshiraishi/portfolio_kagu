@@ -1,0 +1,84 @@
+@use "../../global" as g;
+
+/*!
+page > contact > contact-phone
+----------------------------
+*/
+.contact-phone {
+    padding-top: 40px;
+
+    @include g.mq() {
+        padding-top: 80px;
+    }
+}
+.contact-phone-text {
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    span {
+        display: inline-block;
+    }
+}
+.contact-phone-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg-secondary);
+    padding: 32px;
+    margin-top: 24px;
+
+    span {
+        display: block;
+    }
+
+    @include g.mq() {
+        padding: 40px;
+        margin: 40px 80px 0;
+        pointer-events: none;
+    }
+}
+.contact-phone-info-icon {
+    width: 38px;
+    height: 39px;
+    background-image: url(/img/contact/icon@2x.png);
+    background-image: image-set(url(/img/contact/icon.png) 1x, url(/img/contact/icon@2x.png) 2x);
+    background-image: -webkit-image-set(url(/img/contact/icon.png) 1x, url(/img/contact/icon@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include g.mq() {
+        width: 58px;
+        height: 59px;
+    }
+}
+.contact-phone-info-text {
+    margin-left: 8px;
+
+    @include g.mq() {
+        margin-left: 24px;
+    }
+}
+.contact-phone-info-number {
+    color: var(--color-font-subtitle);
+    letter-spacing: 0.05em;
+    padding-left: 0.05em;
+    font-family: var(--font-family-english);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+
+    @include g.mq() {
+        font-size: 48px;
+    }
+}
+.contact-phone-info-time {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    padding-left: 4px;
+
+    @include g.mq() {
+        font-size: 15px;
+        padding-left: 8px;
+    }
+}

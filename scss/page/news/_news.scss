@@ -1,0 +1,77 @@
+@use "../../global" as g;
+
+/*!
+page > news > news
+----------------------------
+*/
+.news-filter {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+
+    @include g.mq() {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+}
+[value="all"]:checked ~ .news-filter .news-filter-item [for="all"],
+[value="info"]:checked ~ .news-filter .news-filter-item [for="info"],
+[value="news"]:checked ~ .news-filter .news-filter-item [for="news"],
+[value="recruit"]:checked ~ .news-filter .news-filter-item [for="recruit"] {
+    background-color: var(--color-bg-accent02);
+    color: var(--color-font-white);
+}
+.news-filter-label {
+    cursor: pointer;
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-bg-accent02);
+    display: grid;
+    place-items: center;
+    color: var(--color-font-subtitle);
+    letter-spacing: 0.05em;
+}
+.news-list {
+    margin-top: 32px;
+
+    @include g.mq() {
+        margin-top: 64px;
+    }
+}
+.news-item {
+    &:not(:first-child) {
+        margin-top: 28px;
+
+        @include g.mq() {
+            margin-top: 48px;
+        }
+    }
+}
+.news-item-link {
+    @include g.mq() {
+        display: flex;
+        gap: 24px;
+    }
+}
+.news-item-text {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+
+    @include g.mq() {
+        margin-top: 0;
+    }
+}
+
+/* news filter */
+[value="all"]:checked ~ .news-list [data-category] {
+    display: block;
+}
+
+[value="info"]:checked ~ .news-list .news-item:not([data-category="info"]),
+[value="news"]:checked ~ .news-list .news-item:not([data-category="news"]),
+[value="recruit"]:checked ~ .news-list .news-item:not([data-category="recruit"]) {
+    display: none;
+}

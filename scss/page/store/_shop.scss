@@ -1,0 +1,204 @@
+@use "../../global" as g;
+
+/*!
+page > store > shop
+----------------------------
+*/
+/* shop-index */
+.shop-index-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    justify-content: center;
+
+    @include g.mq(sm) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include g.mq() {
+        position: relative;
+        display: block;
+        height: 554px;
+        background-image: url(/img/store_shop/map@2x.jpg);
+        background-image: image-set(url(/img/store_shop/map.jpg) 1x, url(/img/store_shop/map@2x.jpg) 2x);
+        background-image: -webkit-image-set(url(/img/store_shop/map.jpg) 1x, url(/img/store_shop/map@2x.jpg) 2x);
+        background-size: 488px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+.shop-index-item a {
+    font-size: 12px;
+    line-height: 1.2;
+    color: var(--color-font-subtitle);
+    letter-spacing: 0.05em;
+    padding-left: 0.05em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid var(--color-font-subtitle);
+    background-color: var(--color-bg-base);
+
+    &::after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        border-color: var(--color-font-subtitle);
+        transform: rotate(45deg);
+    }
+
+    @include g.mq() {
+        width: 100px;
+        position: absolute;
+
+        &[href="#hokkaido"] {
+            top: 12%;
+            left: 63%;
+        }
+
+        &[href="#tohoku"] {
+            top: 36%;
+            left: 60%;
+        }
+
+        &[href="#hokuriku"] {
+            top: 52%;
+            left: 45%;
+        }
+
+        &[href="#kanto"] {
+            top: 63%;
+            left: 55%;
+        }
+
+        &[href="#kinki"] {
+            top: 63%;
+            left: 39%;
+        }
+
+        &[href="#tokai"] {
+            top: 72%;
+            left: 45%;
+        }
+
+        &[href="#chugoku"] {
+            top: 70%;
+            left: 26%;
+        }
+
+        &[href="#shikoku"] {
+            top: 82%;
+            left: 34%;
+        }
+
+        &[href="#kyusyu"] {
+            top: 85%;
+            left: 20%;
+        }
+    }
+}
+
+
+/* shop-list */
+.shop-list {
+    margin-top: 32px;
+
+    @include g.mq() {
+        margin-top: 64px;
+    }
+}
+.shop-place {
+    margin-top: 60px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+.shop-place-list {
+    @include g.mq(sm) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 32px;
+    }
+
+    @include g.mq() {
+        display: block;
+    }
+}
+.shop-place-item {
+    padding: 32px 0;
+    margin: 0 16px;
+    border-bottom: 1px solid var(--color-border-sub-brown);
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    @include g.mq(sm) {
+        border-bottom: none;
+    }
+
+    @include g.mq() {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 40px;
+        border-bottom: 1px solid var(--color-border-sub-brown);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+.shop-place-title {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 24px;
+    background-color: var(--color-bg-secondary);
+    line-height: 1;
+
+
+    @include g.mq() {
+        font-size: 20px;
+        padding: 32px;
+    }
+}
+.shop-place-item-img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+.shop-place-item-title {
+    font-size: 15px;
+    font-weight: 500;
+
+    @include g.mq() {
+        font-size: 16px;
+    }
+}
+.shop-place-item-address,
+.shop-place-item-tel {
+    font-size: 14px;
+
+    span {
+        display: inline-block;
+        margin-right: 12px;
+    }
+}
+.shop-place-item-button {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+
+    @include g.mq() {
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+}

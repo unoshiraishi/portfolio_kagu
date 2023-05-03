@@ -1,0 +1,29 @@
+@use "../global" as g;
+
+/*!
+component > label
+----------------------
+*/
+.c-label {
+    background-color: var(--color-bg-accent);
+    color: var(--color-font-white);
+    padding: 4px 12px 4px calc(12px + 0.05em);
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    display: inline-block;
+
+    &--news {
+        @include g.mq() {
+            width: 128px;
+            display: grid;
+            place-items: center;
+        }
+    }
+
+    &--single {
+        background-color: var(--color-bg-accent02);
+    }
+
+}

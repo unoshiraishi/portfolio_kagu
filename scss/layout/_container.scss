@@ -1,0 +1,21 @@
+@use "../global" as g;
+
+/*!
+layout > container
+----------------------------
+*/
+.l-container,
+.l-container-s,
+.l-container-m {
+    width: 90%;
+    margin: 0 auto;
+}
+.l-container {
+    max-width: var(--width-content);
+}
+.l-container-m {
+    max-width: var(--width-content-m);
+}
+.l-container-s {
+    max-width: var(--width-content-s);
+}

@@ -1,0 +1,129 @@
+@use "../../global" as g;
+
+/*!
+page > contact > contact-mail
+----------------------------
+*/
+.contact-mail-text {
+    display: none;
+
+    @include g.mq() {
+        display: block;
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
+
+    span {
+        display: block;
+    }
+}
+.contact-mail-form {
+    margin-top: 40px;
+}
+.contact-mail-item {
+    border-top: 1px solid var(--color-border-gray);
+    padding: 24px;
+
+    @include g.mq() {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 32px;
+    }
+
+    &--consent {
+        display: flex;
+        justify-content: center;
+    }
+}
+.contact-mail-item-label {
+    @include g.mq() {
+        width: 25%;
+        flex-shrink: 0;
+    }
+}
+.contact-mail-item-body{
+    margin-top: 8px;
+
+    @include g.mq() {
+        width: 75%;
+        margin-top: 0;
+    }
+
+    &--name {
+        display: flex;
+        gap: 16px;
+
+        @include g.mq() {
+            gap: 24px;
+        }
+    }
+}
+.contact-mail-item-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+        flex-shrink: 0;
+    }
+}
+.contact-mail-item-inner-label {
+    flex-shrink: 0;
+    width: 32px;
+
+    @include g.mq() {
+        width: 40px;
+    }
+}
+.contact-mail-item-label {
+    font-weight: bold;
+}
+.contact-mail-item-text {
+    input {
+        height: 48px;
+    }
+}
+.contact-mail-required {
+    background-color: var(--color-bg-accent);
+    color: var(--color-font-white);
+    font-size: 11px;
+    padding: 2px 4px 2px calc(4px + 0.04em);
+    letter-spacing: 0.04em;
+    margin-left: 12px;
+
+    @include g.mq() {
+        font-size: 12px;
+    }
+}
+.contact-mail-item-textarea {
+    textarea {
+        height: 96px;
+
+        @include g.mq() {
+            height: 184px;
+        }
+    }
+}
+
+.c-input-checkbox-text {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+
+    @include g.mq() {
+        font-size: 18px;
+    }
+}
+.contact-mail-consent-link {
+    color: var(--color-bg-accent);
+    border-bottom: 2px solid var(--color-bg-accent);
+}
+.contact-mail-button {
+    text-align: center;
+    margin-top: 16px;
+
+    @include g.mq() {
+        margin-top: 24px;
+    }
+}
