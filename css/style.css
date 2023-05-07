@@ -2737,11 +2737,6 @@ layout > footer
 .footer-nav-dropdown-list {
   display: none;
 }
-@media screen and (min-width: 960px) {
-  .footer-nav-dropdown-list {
-    display: block;
-  }
-}
 
 .footer-nav-dropdown-item a::after {
   display: none;

@@ -175,10 +175,6 @@ layout > footer
 }
 .footer-nav-dropdown-list {
     display: none;
-
-    @include g.mq() {
-        display: block;
-    }
 }
 .footer-nav-dropdown-item {
     a {
