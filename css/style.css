@@ -227,9 +227,6 @@ svg {
 foundation > base
 --------------------------
 */
-html {
-  scroll-behavior: smooth;
-}
 body {
   color: var(--color-font-base);
   background-color: var(--color-bg-base);
@@ -272,9 +269,11 @@ page > top > top-kv
     font-size: 36px;
   }
 }
+
 .top-kv-slider {
   overflow-x: hidden;
 }
+
 .top-kv-slider-item source,
 .top-kv-slider-item img {
   height: 60vh;
@@ -669,7 +668,7 @@ page > furniture > furniture-theme
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url(../img/common/arrow_white.png), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-image: url(/img/common/arrow_white.png), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     background-size: 20px, 100%;
     background-position: 95% 93%, center;
     background-repeat: no-repeat;
@@ -1060,9 +1059,9 @@ page > store > shop
     position: relative;
     display: block;
     height: 554px;
-    background-image: url(../img/store_shop/map@2x.jpg);
-    background-image: image-set(url(../img/store_shop/map.jpg) 1x, url(../img/store_shop/map@2x.jpg) 2x);
-    background-image: -webkit-image-set(url(../img/store_shop/map.jpg) 1x, url(../img/store_shop/map@2x.jpg) 2x);
+    background-image: url(/img/store_shop/map@2x.jpg);
+    background-image: image-set(url(/img/store_shop/map.jpg) 1x, url(/img/store_shop/map@2x.jpg) 2x);
+    background-image: -webkit-image-set(url(/img/store_shop/map.jpg) 1x, url(/img/store_shop/map@2x.jpg) 2x);
     background-size: 488px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1119,7 +1118,7 @@ page > store > shop
     top: 63%;
     left: 39%;
   }
-  .shop-index-item a[href="#tokai_koshin"] {
+  .shop-index-item a[href="#tokai"] {
     top: 72%;
     left: 45%;
   }
@@ -1131,7 +1130,7 @@ page > store > shop
     top: 82%;
     left: 34%;
   }
-  .shop-index-item a[href="#kyusyu_okinawa"] {
+  .shop-index-item a[href="#kyusyu"] {
     top: 85%;
     left: 20%;
   }
@@ -1317,6 +1316,14 @@ page > news > news
   }
 }
 
+[value=all]:checked ~ .news-filter .news-filter-item [for=all],
+[value=info]:checked ~ .news-filter .news-filter-item [for=info],
+[value=news]:checked ~ .news-filter .news-filter-item [for=news],
+[value=recruit]:checked ~ .news-filter .news-filter-item [for=recruit] {
+  background-color: var(--color-bg-accent02);
+  color: var(--color-font-white);
+}
+
 .news-filter-label {
   cursor: pointer;
   width: 100%;
@@ -1327,26 +1334,6 @@ page > news > news
   place-items: center;
   color: var(--color-font-subtitle);
   letter-spacing: 0.05em;
-}
-
-.news-filter.is_category .news-filter-item:nth-child(1) .news-filter-label {
-  background-color: var(--color-bg-accent02);
-  color: var(--color-font-white);
-}
-
-.news-filter.is_info .news-filter-item:nth-child(2) .news-filter-label {
-  background-color: var(--color-bg-accent02);
-  color: var(--color-font-white);
-}
-
-.news-filter.is_news .news-filter-item:nth-child(3) .news-filter-label  {
-  background-color: var(--color-bg-accent02);
-  color: var(--color-font-white);
-}
-
-.news-filter.is_recruit .news-filter-item:nth-child(4) .news-filter-label  {
-  background-color: var(--color-bg-accent02);
-  color: var(--color-font-white);
 }
 
 .news-list {
@@ -1386,6 +1373,16 @@ page > news > news
   }
 }
 
+/* news filter */
+[value=all]:checked ~ .news-list [data-category] {
+  display: block;
+}
+
+[value=info]:checked ~ .news-list .news-item:not([data-category=info]),
+[value=news]:checked ~ .news-list .news-item:not([data-category=news]),
+[value=recruit]:checked ~ .news-list .news-item:not([data-category=recruit]) {
+  display: none;
+}
 
 /*!
 page > news > single
@@ -1419,9 +1416,9 @@ page > news > single
   display: block;
   width: 20px;
   height: 5px;
-  background-image: url(../img/common/arrow_black@2x.png);
-  background-image: image-set(url(../img/common/arrow_black.png) 1x, url(../img/common/arrow_black@2x.png) 2x);
-  background-image: -webkit-image-set(url(../img/common/arrow_black.png) 1x, url(../img/common/arrow_black@2x.png) 2x);
+  background-image: url(/img/common/arrow_black@2x.png);
+  background-image: image-set(url(/img/common/arrow_black.png) 1x, url(/img/common/arrow_black@2x.png) 2x);
+  background-image: -webkit-image-set(url(/img/common/arrow_black.png) 1x, url(/img/common/arrow_black@2x.png) 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
@@ -1526,9 +1523,9 @@ page > contact > contact-phone
 .contact-phone-info-icon {
   width: 38px;
   height: 39px;
-  background-image: url(../img/contact/icon@2x.png);
-  background-image: image-set(url(../img/contact/icon.png) 1x, url(../img/contact/icon@2x.png) 2x);
-  background-image: -webkit-image-set(url(../img/contact/icon.png) 1x, url(../img/contact/icon@2x.png) 2x);
+  background-image: url(/img/contact/icon@2x.png);
+  background-image: image-set(url(/img/contact/icon.png) 1x, url(/img/contact/icon@2x.png) 2x);
+  background-image: -webkit-image-set(url(/img/contact/icon.png) 1x, url(/img/contact/icon@2x.png) 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1710,9 +1707,6 @@ page > contact > contact-mail
 .contact-mail-button {
   text-align: center;
   margin-top: 16px;
-}
-.contact-mail-button .wpcf7-spinner {
-  display: none !important;
 }
 @media screen and (min-width: 960px) {
   .contact-mail-button {
@@ -1932,17 +1926,17 @@ component > button
   width: 13px;
   height: 13px;
   display: inline-block;
-  background-image: url(../img/common/icon_link@2x.png);
-  background-image: image-set(url(../img/common/icon_link@2x.png) 1x, url(../img/common/icon_link@2x.png) 2x);
-  background-image: -webkit-image-set(url(../img/common/icon_link@2x.png) 1x, url(../img/common/icon_link@2x.png) 2x);
+  background-image: url(/img/common/icon_link@2x.png);
+  background-image: image-set(url(/img/common/icon_link@2x.png) 1x, url(/img/common/icon_link@2x.png) 2x);
+  background-image: -webkit-image-set(url(/img/common/icon_link@2x.png) 1x, url(/img/common/icon_link@2x.png) 2x);
   background-size: 13px;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 960px) {
   .c-button--link-icon:hover::after {
-    background-image: url(../img/common/icon_link_white@2x.png);
-    background-image: image-set(url(../img/common/icon_link_white@2x.png) 1x, url(../img/common/icon_link_white@2x.png) 2x);
-    background-image: -webkit-image-set(url(../img/common/icon_link_white@2x.png) 1x, url(../img/common/icon_link_white@2x.png) 2x);
+    background-image: url(/img/common/icon_link_white@2x.png);
+    background-image: image-set(url(/img/common/icon_link_white@2x.png) 1x, url(/img/common/icon_link_white@2x.png) 2x);
+    background-image: -webkit-image-set(url(/img/common/icon_link_white@2x.png) 1x, url(/img/common/icon_link_white@2x.png) 2x);
   }
 }
 
@@ -1986,9 +1980,9 @@ component > button
 .c-button-onlineshop::before {
   width: 20px;
   height: 21px;
-  background-image: url(../img/common/icon_header_onlineshop@2x.png);
-  background-image: image-set(url(../img/common/icon_header_onlineshop.png) 1x, url(../img/common/icon_header_onlineshop@2x.png) 2x);
-  background-image: -webkit-image-set(url(../img/common/icon_header_onlineshop.png) 1x, url(../img/common/icon_header_onlineshop@2x.png) 2x);
+  background-image: url(/img/common/icon_header_onlineshop@2x.png);
+  background-image: image-set(url(/img/common/icon_header_onlineshop.png) 1x, url(/img/common/icon_header_onlineshop@2x.png) 2x);
+  background-image: -webkit-image-set(url(/img/common/icon_header_onlineshop.png) 1x, url(/img/common/icon_header_onlineshop@2x.png) 2x);
   background-size: 20px;
 }
 
@@ -1999,9 +1993,9 @@ component > button
 .c-button-contact::before {
   width: 18px;
   height: 13px;
-  background-image: url(../img/common/icon_header_contact@2x.png);
-  background-image: image-set(url(../img/common/icon_header_contact.png) 1x, url(../img/common/icon_header_contact@2x.png) 2x);
-  background-image: -webkit-image-set(url(../img/common/icon_header_contact.png) 1x, url(../img/common/icon_header_contact@2x.png) 2x);
+  background-image: url(/img/common/icon_header_contact@2x.png);
+  background-image: image-set(url(/img/common/icon_header_contact.png) 1x, url(/img/common/icon_header_contact@2x.png) 2x);
+  background-image: -webkit-image-set(url(/img/common/icon_header_contact.png) 1x, url(/img/common/icon_header_contact@2x.png) 2x);
   background-size: 18px;
 }
 
@@ -2015,18 +2009,18 @@ component > page-kv
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/common/bg_page_kv-sp@2x.jpg);
-  background-image: image-set(url(../img/common/bg_page_kv-sp.jpg) 1x, url(../img/common/bg_page_kv-sp@2x.jpg) 2x);
-  background-image: -webkit-image-set(url(../img/common/bg_page_kv-sp.jpg) 1x, url(../img/common/bg_page_kv-sp@2x.jpg) 2x);
+  background-image: url(/img/common/bg_page_kv-sp@2x.jpg);
+  background-image: image-set(url(/img/common/bg_page_kv-sp.jpg) 1x, url(/img/common/bg_page_kv-sp@2x.jpg) 2x);
+  background-image: -webkit-image-set(url(/img/common/bg_page_kv-sp.jpg) 1x, url(/img/common/bg_page_kv-sp@2x.jpg) 2x);
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-width: 960px) {
   .c-page-kv {
     height: 400px;
-    background-image: url(../img/common/bg_page_kv@2x.jpg);
-    background-image: image-set(url(../img/common/bg_page_kv.jpg) 1x, url(../img/common/bg_page_kv@2x.jpg) 2x);
-    background-image: -webkit-image-set(url(../img/common/bg_page_kv.jpg) 1x, url(../img/common/bg_page_kv@2x.jpg) 2x);
+    background-image: url(/img/common/bg_page_kv@2x.jpg);
+    background-image: image-set(url(/img/common/bg_page_kv.jpg) 1x, url(/img/common/bg_page_kv@2x.jpg) 2x);
+    background-image: -webkit-image-set(url(/img/common/bg_page_kv.jpg) 1x, url(/img/common/bg_page_kv@2x.jpg) 2x);
   }
 }
 
@@ -2045,7 +2039,7 @@ component > pagination
   }
 }
 
-.c-pagination * {
+.c-pagination-item {
   color: var(--color-font-subtitle);
   width: 32px;
   height: 32px;
@@ -2056,18 +2050,18 @@ component > pagination
   font-size: 14px;
 }
 @media screen and (min-width: 960px) {
-  .c-pagination * {
+  .c-pagination-item {
     width: 40px;
     height: 40px;
   }
 }
-.c-pagination *:not(:first-child) {
+.c-pagination-item:not(:first-child) {
   margin-left: 8px;
 }
-.c-pagination .prev {
+.c-pagination-item--prev {
   position: relative;
 }
-.c-pagination .prev::before {
+.c-pagination-item--prev::before {
   content: "";
   position: absolute;
   margin: auto;
@@ -2081,10 +2075,10 @@ component > pagination
   border-right: 1px solid var(--color-font-subtitle);
   transform: rotate(-135deg);
 }
-.c-pagination .next {
+.c-pagination-item--next {
   position: relative;
 }
-.c-pagination .next::before {
+.c-pagination-item--next::before {
   content: "";
   position: absolute;
   margin: auto;
@@ -2098,7 +2092,7 @@ component > pagination
   border-right: 1px solid var(--color-font-subtitle);
   transform: rotate(45deg);
 }
-.c-pagination .current {
+.c-pagination-item.is-pagination-active {
   background-color: var(--color-font-subtitle);
   color: var(--color-font-white);
 }
@@ -2109,18 +2103,18 @@ component > recruit
 */
 .c-recruit {
   color: var(--color-font-white);
-  background-image: url(../img/common/bg_recruit-sp@2x.jpg);
-  background-image: image-set(url(../img/common/bg_recruit-sp.jpg) 1x, url(../img/common/bg_recruit-sp@2x.jpg) 2x);
-  background-image: -webkit-image-set(url(../img/common/bg_recruit-sp.jpg) 1x, url(../img/common/bg_recruit-sp@2x.jpg) 2x);
+  background-image: url(/img/common/bg_recruit-sp@2x.jpg);
+  background-image: image-set(url(/img/common/bg_recruit-sp.jpg) 1x, url(/img/common/bg_recruit-sp@2x.jpg) 2x);
+  background-image: -webkit-image-set(url(/img/common/bg_recruit-sp.jpg) 1x, url(/img/common/bg_recruit-sp@2x.jpg) 2x);
   background-size: cover;
   background-position: center;
   padding: 40px 0;
 }
 @media screen and (min-width: 960px) {
   .c-recruit {
-    background-image: url(../img/common/bg_recruit@2x.jpg);
-    background-image: image-set(url(../img/common/bg_recruit.jpg) 1x, url(../img/common/bg_recruit@2x.jpg) 2x);
-    background-image: -webkit-image-set(url(../img/common/bg_recruit.jpg) 1x, url(../img/common/bg_recruit@2x.jpg) 2x);
+    background-image: url(/img/common/bg_recruit@2x.jpg);
+    background-image: image-set(url(/img/common/bg_recruit.jpg) 1x, url(/img/common/bg_recruit@2x.jpg) 2x);
+    background-image: -webkit-image-set(url(/img/common/bg_recruit.jpg) 1x, url(/img/common/bg_recruit@2x.jpg) 2x);
     padding: 80px 0;
   }
 }
@@ -2165,9 +2159,6 @@ component > label
 }
 .c-label--single {
   background-color: var(--color-bg-accent02);
-  width: 128px;
-  display: grid;
-  place-items: center;
 }
 
 /*!
@@ -2212,9 +2203,9 @@ component > link
   display: block;
   width: 20px;
   height: 5px;
-  background-image: url(../img/common/arrow_black@2x.png);
-  background-image: image-set(url(../img/common/arrow_black.png) 1x, url(../img/common/arrow_black@2x.png) 2x);
-  background-image: -webkit-image-set(url(../img/common/arrow_black.png) 1x, url(../img/common/arrow_black@2x.png) 2x);
+  background-image: url(/img/common/arrow_black@2x.png);
+  background-image: image-set(url(/img/common/arrow_black.png) 1x, url(/img/common/arrow_black@2x.png) 2x);
+  background-image: -webkit-image-set(url(/img/common/arrow_black.png) 1x, url(/img/common/arrow_black@2x.png) 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -2225,9 +2216,9 @@ component > link
   display: block;
   width: 13px;
   height: 13px;
-  background-image: url(../img/common/icon_link@2x.png);
-  background-image: image-set(url(../img/common/icon_link.png) 1x, url(../img/common/icon_link@2x.png) 2x);
-  background-image: -webkit-image-set(url(../img/common/icon_link.png) 1x, url(../img/common/icon_link@2x.png) 2x);
+  background-image: url(/img/common/icon_link@2x.png);
+  background-image: image-set(url(/img/common/icon_link.png) 1x, url(/img/common/icon_link@2x.png) 2x);
+  background-image: -webkit-image-set(url(/img/common/icon_link.png) 1x, url(/img/common/icon_link@2x.png) 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 13px;
@@ -2253,9 +2244,6 @@ component >  breadcrumbs
 .c-breadcrumbs-list {
   display: flex;
   overflow-x: scroll;
-  color: var(--color-font-white);
-  font-size: 13px;
-  letter-spacing: 0.05em;
   scrollbar-width: none;
   gap: 16px;
   align-items: center;
@@ -2265,8 +2253,15 @@ component >  breadcrumbs
   display: none;
 }
 
-.c-breadcrumbs-list span {
+.c-breadcrumbs-item {
   white-space: nowrap;
+  color: var(--color-font-white);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.c-breadcrumbs-item:not(:first-child)::before {
+  content: ">";
+  margin-right: 16px;
 }
 
 /*!
@@ -2295,12 +2290,11 @@ component > form > textarea
 component > form > checkbox
 ----------------------
 */
-.c-input-checkbox:checked + .wpcf7-list-item-label::before {
+.c-input-checkbox:checked + .c-input-checkbox-text::before {
   background-color: var(--color-bg-accent);
-  border: 2px solid var(---color-bg-accent);
 }
 
-.c-input-checkbox:checked + .wpcf7-list-item-label::after {
+.c-input-checkbox:checked + .c-input-checkbox-text::after {
   content: "";
   position: absolute;
   border: solid #ffffff;
@@ -2312,7 +2306,7 @@ component > form > checkbox
   transform: translateY(-2px) rotate(45deg);
 }
 @media screen and (min-width: 960px) {
-  .c-input-checkbox:checked + .wpcf7-list-item-label::after {
+  .c-input-checkbox:checked + .c-input-checkbox-text::after {
     left: 0.7em;
     top: 0.55em;
     width: 0.7em;
@@ -2320,14 +2314,14 @@ component > form > checkbox
   }
 }
 
-.wpcf7-list-item-label {
+.c-input-checkbox-text {
   cursor: pointer;
   position: relative;
   display: inline-flex;
   align-items: center;
 }
 
-.wpcf7-list-item-label:before {
+.c-input-checkbox-text:before {
   content: "";
   display: inline-block;
   width: 24px;
@@ -2335,10 +2329,9 @@ component > form > checkbox
   margin-right: 16px;
   flex-shrink: 0;
   background-color: var(--color-bg-secondary);
-  border: 2px solid var(--color-border-gray);
 }
 @media screen and (min-width: 960px) {
-  .wpcf7-list-item-label:before {
+  .c-input-checkbox-text:before {
     width: 32px;
     height: 32px;
   }
@@ -2547,9 +2540,9 @@ layout > header
   display: block;
   width: 20px;
   height: 5px;
-  background-image: url(../img/common/arrow_white@2x.png);
-  background-image: image-set(url(../img/common/arrow_white.png) 1x, url(../img/common/arrow_white@2x.png) 2x);
-  background-image: -webkit-image-set(url(../img/common/arrow_white.png) 1x, url(../img/common/arrow_white@2x.png) 2x);
+  background-image: url(/img/common/arrow_white@2x.png);
+  background-image: image-set(url(/img/common/arrow_white.png) 1x, url(/img/common/arrow_white@2x.png) 2x);
+  background-image: -webkit-image-set(url(/img/common/arrow_white.png) 1x, url(/img/common/arrow_white@2x.png) 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -2671,9 +2664,9 @@ layout > footer
   display: block;
   width: 20px;
   height: 5px;
-  background-image: url(..../img/common/arrow_white@2x.png);
-  background-image: image-set(url(..../img/common/arrow_white.png) 1x, url(..../img/common/arrow_white@2x.png) 2x);
-  background-image: -webkit-image-set(url(..../img/common/arrow_white.png) 1x, url(..../img/common/arrow_white@2x.png) 2x);
+  background-image: url(../img/common/arrow_white@2x.png);
+  background-image: image-set(url(../img/common/arrow_white.png) 1x, url(../img/common/arrow_white@2x.png) 2x);
+  background-image: -webkit-image-set(url(../img/common/arrow_white.png) 1x, url(../img/common/arrow_white@2x.png) 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -2828,7 +2821,7 @@ utility > utility
 }
 
 .u-ptb {
-  padding: 40px 0 120px;
+  padding: 40px 0 60px;
 }
 @media screen and (min-width: 960px) {
   .u-ptb {
