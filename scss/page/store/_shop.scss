@@ -19,9 +19,9 @@ page > store > shop
         position: relative;
         display: block;
         height: 554px;
-        background-image: url(/img/store_shop/map@2x.jpg);
-        background-image: image-set(url(/img/store_shop/map.jpg) 1x, url(/img/store_shop/map@2x.jpg) 2x);
-        background-image: -webkit-image-set(url(/img/store_shop/map.jpg) 1x, url(/img/store_shop/map@2x.jpg) 2x);
+        background-image: url(../img/store_shop/map@2x.jpg);
+        background-image: image-set(url(../img/store_shop/map.jpg) 1x, url(../img/store_shop/map@2x.jpg) 2x);
+        background-image: -webkit-image-set(url(../img/store_shop/map.jpg) 1x, url(../img/store_shop/map@2x.jpg) 2x);
         background-size: 488px;
         background-position: center;
         background-repeat: no-repeat;
@@ -83,7 +83,7 @@ page > store > shop
             left: 39%;
         }
 
-        &[href="#tokai"] {
+        &[href="#tokai_koshin"] {
             top: 72%;
             left: 45%;
         }
@@ -98,7 +98,7 @@ page > store > shop
             left: 34%;
         }
 
-        &[href="#kyusyu"] {
+        &[href="#kyusyu_okinawa"] {
             top: 85%;
             left: 20%;
         }

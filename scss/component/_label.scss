@@ -24,6 +24,9 @@ component > label
 
     &--single {
         background-color: var(--color-bg-accent02);
+        width: 128px;
+        display: grid;
+        place-items: center;
     }
 
 }

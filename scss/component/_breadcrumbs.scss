@@ -17,24 +17,18 @@ component >  breadcrumbs
 .c-breadcrumbs-list {
     display: flex;
     overflow-x: scroll;
-    scrollbar-width: none;
-    gap: 16px;
-    align-items: center;
-}
-.c-breadcrumbs-list::-webkit-scrollbar {
-    display: none;
-}
-.c-breadcrumbs-item {
-    white-space: nowrap;
     color: var(--color-font-white);
     font-size: 13px;
     letter-spacing: 0.05em;
+    scrollbar-width: none;
+    gap: 16px;
+    align-items: center;
 
-    &:not(:first-child) {
-        &::before {
-            content: ">";
-            margin-right: 16px;
-        }
+    span {
+        white-space: nowrap;
     }
+}
+.c-breadcrumbs-list::-webkit-scrollbar {
+    display: none;
 }
 

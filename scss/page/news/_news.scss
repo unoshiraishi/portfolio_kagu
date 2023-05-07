@@ -14,13 +14,6 @@ page > news > news
         gap: 24px;
     }
 }
-[value="all"]:checked ~ .news-filter .news-filter-item [for="all"],
-[value="info"]:checked ~ .news-filter .news-filter-item [for="info"],
-[value="news"]:checked ~ .news-filter .news-filter-item [for="news"],
-[value="recruit"]:checked ~ .news-filter .news-filter-item [for="recruit"] {
-    background-color: var(--color-bg-accent02);
-    color: var(--color-font-white);
-}
 .news-filter-label {
     cursor: pointer;
     width: 100%;
@@ -32,6 +25,22 @@ page > news > news
     color: var(--color-font-subtitle);
     letter-spacing: 0.05em;
 }
+.news-filter.is_category .news-filter-item:nth-child(1) .news-filter-label {
+    background-color: var(--color-bg-accent02);
+    color: var(--color-font-white);
+  }
+  .news-filter.is_info .news-filter-item:nth-child(2) .news-filter-label {
+    background-color: var(--color-bg-accent02);
+    color: var(--color-font-white);
+  }
+  .news-filter.is_news .news-filter-item:nth-child(3) .news-filter-label  {
+    background-color: var(--color-bg-accent02);
+    color: var(--color-font-white);
+  }
+  .news-filter.is_recruit .news-filter-item:nth-child(4) .news-filter-label  {
+    background-color: var(--color-bg-accent02);
+    color: var(--color-font-white);
+  }
 .news-list {
     margin-top: 32px;
 
@@ -63,15 +72,4 @@ page > news > news
     @include g.mq() {
         margin-top: 0;
     }
-}
-
-/* news filter */
-[value="all"]:checked ~ .news-list [data-category] {
-    display: block;
-}
-
-[value="info"]:checked ~ .news-list .news-item:not([data-category="info"]),
-[value="news"]:checked ~ .news-list .news-item:not([data-category="news"]),
-[value="recruit"]:checked ~ .news-list .news-item:not([data-category="recruit"]) {
-    display: none;
 }

@@ -12,27 +12,8 @@ component > pagination
     @include g.mq() {
         margin-top: 48px;
     }
-}
-.c-pagination-item {
-    color: var(--color-font-subtitle);
-    width: 32px;
-    height: 32px;
-    display: grid;
-    place-items: center;
-    background-color: var(--color-bg-white);
-    border: 1px solid var(--color-font-subtitle);
-    font-size: 14px;
 
-    @include g.mq() {
-        width: 40px;
-        height: 40px;
-    }
-
-    &:not(:first-child) {
-        margin-left: 8px;
-    }
-
-    &--prev {
+    .prev {
         position: relative;
 
         &::before {
@@ -51,7 +32,7 @@ component > pagination
         }
     }
 
-    &--next {
+    .next {
         position: relative;
 
         &::before {
@@ -70,8 +51,27 @@ component > pagination
         }
     }
 
-    &.is-pagination-active {
+    .current {
         background-color: var(--color-font-subtitle);
         color: var(--color-font-white);
+    }
+}
+.c-pagination * {
+    color: var(--color-font-subtitle);
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-font-subtitle);
+    font-size: 14px;
+
+    @include g.mq() {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:not(:first-child) {
+        margin-left: 8px;
     }
 }

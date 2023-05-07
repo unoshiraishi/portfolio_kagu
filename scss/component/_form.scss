@@ -26,11 +26,12 @@ component > form > textarea
 component > form > checkbox
 ----------------------
 */
-.c-input-checkbox:checked + .c-input-checkbox-text::before {
+.c-input-checkbox:checked + .wpcf7-list-item-label::before {
     background-color: var(--color-bg-accent);
+    border: 2px solid var(---color-bg-accent);
 }
 
-.c-input-checkbox:checked + .c-input-checkbox-text::after {
+.c-input-checkbox:checked + .wpcf7-list-item-label::after {
     content: "";
     position: absolute;
     border: solid #ffffff;
@@ -48,13 +49,13 @@ component > form > checkbox
         height: 0.95em;
     }
 }
-.c-input-checkbox-text {
+.wpcf7-list-item-label {
     cursor: pointer;
     position: relative;
     display: inline-flex;
     align-items: center;
 }
-.c-input-checkbox-text:before {
+.wpcf7-list-item-label:before  {
     content: "";
     display: inline-block;
     width: 24px;
@@ -62,6 +63,7 @@ component > form > checkbox
     margin-right: 16px;
     flex-shrink: 0;
     background-color: var(--color-bg-secondary);
+    border: 2px solid var(--color-border-gray);
 
     @include g.mq() {
         width: 32px;

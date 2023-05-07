@@ -4,6 +4,9 @@
 foundation > base
 --------------------------
 */
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: var(--color-font-base);
     background-color: var(--color-bg-base);
