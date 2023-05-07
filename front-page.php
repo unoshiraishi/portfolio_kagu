@@ -55,7 +55,7 @@
                 <div class="top-furniture-body u-mt">
                     <section class="top-furniture-item top-furniture-item--flex">
                         <div class="top-furniture-item-img">
-                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_01.jpg 1x, /img/top/img_furniture_01@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_01@2x.jpg" alt="" decoding="async" loading="lazy">
+                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/top/img_furniture_01@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_01@2x.jpg" alt="" decoding="async" loading="lazy">
                         </div>
                         <div class="top-furniture-item-text">
                             <h3 class="top-furniture-item-title">テーマで探す</h3>
@@ -67,7 +67,7 @@
                     </section>
                     <section class="top-furniture-item top-furniture-item--flex">
                         <div class="top-furniture-item-img">
-                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_02.jpg 1x, /img/top/img_furniture_02@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_02@2x.jpg" alt="" decoding="async" loading="lazy">
+                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_02.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/top/img_furniture_02@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_02@2x.jpg" alt="" decoding="async" loading="lazy">
                         </div>
                         <div class="top-furniture-item-text">
                             <h3 class="top-furniture-item-title">カラーで探す</h3>
@@ -79,7 +79,7 @@
                     </section>
                     <section class="top-furniture-item">
                         <div class="top-furniture-item-img">
-                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_03.jpg 1x, /img/top/img_furniture_03@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_03@2x.jpg" alt="" decoding="async" loading="lazy">
+                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/top/img_furniture_03@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_03@2x.jpg" alt="" decoding="async" loading="lazy">
                         </div>
                         <div class="top-furniture-item-text">
                             <h3 class="top-furniture-item-title">シーンで探す</h3>
@@ -91,7 +91,7 @@
                     </section>
                     <section class="top-furniture-item">
                         <div class="top-furniture-item-img">
-                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_04.jpg 1x, /img/top/img_furniture_04@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_04@2x.jpg" alt="" decoding="async" loading="lazy">
+                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_04.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/top/img_furniture_04@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_04@2x.jpg" alt="" decoding="async" loading="lazy">
                         </div>
                         <div class="top-furniture-item-text">
                             <h3 class="top-furniture-item-title">ブランドで探す</h3>
@@ -103,7 +103,7 @@
                     </section>
                     <section class="top-furniture-item">
                         <div class="top-furniture-item-img">
-                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_05.jpg 1x, /img/top/img_furniture_05@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_05@2x.jpg" alt="" decoding="async" loading="lazy">
+                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_05.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/top/img_furniture_05@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_furniture_05@2x.jpg" alt="" decoding="async" loading="lazy">
                         </div>
                         <div class="top-furniture-item-text">
                             <h3 class="top-furniture-item-title">素材で探す</h3>
@@ -122,7 +122,7 @@
                     <div class="top-furniture-shop-list">
                         <section class="top-furniture-shop-item">
                             <div class="top-furniture-shop-item-img">
-                                <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_store.jpg 1x, /img/top/img_store@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_store@2x.jpg" alt="" decoding="async" loading="lazy">
+                                <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_store.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/top/img_store@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_store@2x.jpg" alt="" decoding="async" loading="lazy">
                             </div>
                             <div class="top-furniture-shop-item-text">
                                 <?php
@@ -140,7 +140,7 @@
                         </section>
                         <section class="top-furniture-shop-item">
                             <div class="top-furniture-shop-item-img">
-                                <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_online.jpg 1x, /img/top/img_online@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_online@2x.jpg" alt="" decoding="async" loading="lazy">
+                                <img srcset="<?php echo get_template_directory_uri(); ?>/img/top/img_online.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/top/img_online@2x.jpg 2x" width="" height="" src="<?php echo get_template_directory_uri(); ?>/img/top/img_online@2x.jpg" alt="" decoding="async" loading="lazy">
                             </div>
                             <div class="top-furniture-shop-item-text">
                                 <h3 class="top-furniture-shop-item-title top-furniture-shop-item-title--english">online store</h3>

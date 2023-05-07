@@ -17,7 +17,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">modern</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_01.jpg 1x, /img/furniture/img_furniture_01@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_01@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_01@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_01@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>
@@ -25,7 +25,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">natural</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_02.jpg 1x, /img/furniture/img_furniture_02@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_02@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_02.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_02@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_02@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>
@@ -33,7 +33,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">nordic</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_03.jpg 1x, /img/furniture/img_furniture_03@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_03@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_03@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_03@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>
@@ -41,7 +41,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">vintage</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_04.jpg 1x, /img/furniture/img_furniture_04@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_04@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_04.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_04@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_04@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>
@@ -49,7 +49,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">japanese</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_05.jpg 1x, /img/furniture/img_furniture_05@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_05@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_05.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_05@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_05@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>
@@ -57,7 +57,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">hawaiian</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_06.jpg 1x, /img/furniture/img_furniture_06@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_06@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_06.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_06@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_06@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>
@@ -65,7 +65,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">resort</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_07.jpg 1x, /img/furniture/img_furniture_07@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_07@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_07.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_07@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_07@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>
@@ -73,7 +73,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">american</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_08.jpg 1x, /img/furniture/img_furniture_08@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_08@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_08.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_08@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_08@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>
@@ -81,7 +81,7 @@ get_header();
                 <a href="" class="furniture-theme-item-link" target="_blank" rel="noopener noreferrer">
                     <h3 class="furniture-theme-title">minimal</h3>
                     <div class="furniture-theme-img">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_09.jpg 1x, /img/furniture/img_furniture_09@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_09@2x.jpg" alt="" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_09.jpg 1x, <?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_09@2x.jpg 2x" width="760" height="760" src="<?php echo get_template_directory_uri(); ?>/img/furniture/img_furniture_09@2x.jpg" alt="" decoding="async" loading="lazy">
                     </div>
                 </a>
             </section>

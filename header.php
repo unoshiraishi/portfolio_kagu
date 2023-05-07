@@ -41,7 +41,7 @@
             <div class="header-inner">
                 <h1 class="header-logo">
                     <a href="<?php echo home_url();?>">
-                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/common/logo.png 1x, /img/common/logo@2x.png 2x" width="290" height="46" src="<?php echo get_template_directory_uri(); ?>/img/common/logo@2x.png" alt="KAGU" decoding="async" loading="lazy">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/img/common/logo.png 1x, <?php echo get_template_directory_uri(); ?>/img/common/logo@2x.png 2x" width="290" height="46" src="<?php echo get_template_directory_uri(); ?>/img/common/logo@2x.png" alt="KAGU" decoding="async" loading="lazy">
                     </a>
                 </h1>
 
@@ -74,7 +74,7 @@
                 <div class="sp-menu-header-inner">
                     <h1 class="sp-menu-header-logo">
                         <a href="<?php echo home_url();?>">
-                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/common/logo_white.png 1x, /img/common/logo_white@2x.png 2x" width="290" height="46" src="<?php echo get_template_directory_uri(); ?>/img/common/logo_white@2x.png" alt="KAGU" decoding="async" loading="lazy">
+                            <img srcset="<?php echo get_template_directory_uri(); ?>/img/common/logo_white.png 1x, <?php echo get_template_directory_uri(); ?>/img/common/logo_white@2x.png 2x" width="290" height="46" src="<?php echo get_template_directory_uri(); ?>/img/common/logo_white@2x.png" alt="KAGU" decoding="async" loading="lazy">
                         </a>
                     </h1>
 
