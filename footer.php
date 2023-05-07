@@ -39,17 +39,17 @@
                 </div>
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">
-                        <li class="footer-nav-item"><a href="<?php echo get_template_directory_uri(); ?>/furniture/">取扱い家具</a></li>
+                        <li class="footer-nav-item"><a href="<?php echo esc_url(home_url('furniture')); ?>">取扱い家具</a></li>
                         <li class="footer-nav-item footer-nav-item--dropdown">
                             <span>販売店・展示場一覧</span>
                             <ul class="footer-nav-dropdown-list">
-                                <li class="footer-nav-dropdown-item"><a href="<?php echo get_template_directory_uri(); ?>/store/shop.html">販売店一覧</a></li>
-                                <li class="footer-nav-dropdown-item"><a href="<?php echo get_template_directory_uri(); ?>/store/showroom.html">展示場一覧</a></li>
+                                <li class="footer-nav-dropdown-item"><a href="<?php echo get_post_type_archive_link('shop'); ?>">販売店一覧</a></li>
+                                <li class="footer-nav-dropdown-item"><a href="<?php echo get_post_type_archive_link('showroom'); ?>">展示場一覧</a></li>
                             </ul>
                         </li>
-                        <li class="footer-nav-item"><a href="<?php echo get_template_directory_uri(); ?>/recruit/">採用情報</a></li>
-                        <li class="footer-nav-item"><a href="<?php echo get_template_directory_uri(); ?>/news/">お知らせ</a></li>
-                        <li class="footer-nav-item"><a href="<?php echo get_template_directory_uri(); ?>/contact/">お問い合わせ</a></li>
+                        <li class="footer-nav-item"><a href="<?php echo esc_url(home_url('recruit')); ?>">採用情報</a></li>
+                        <li class="footer-nav-item"><a href="<?php $term_obj = get_term_by('slug', 'news', 'category'); echo esc_url(get_term_link($term_obj));?>">お知らせ</a></li>
+                        <li class="footer-nav-item"><a href="<?php echo esc_url(home_url('contact')); ?>">お問い合わせ</a></li>
                     </ul>
                 </nav>
             </div>
