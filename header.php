@@ -25,12 +25,6 @@
     <meta name="twitter:description" content="KAGUは、Webサイト制作におけるコーディングの教育教材です。" />
     <meta name="twitter:image:src" content="https://www.example.com/" />
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@500&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-
-
 <?php wp_head(); ?>
 </head>
 
