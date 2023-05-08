@@ -133,7 +133,7 @@
                                 <h3 class="top-furniture-shop-item-title"><?php echo get_the_title(); ?></h3>
                                 <p class="top-furniture-shop-item-desctription"><?php echo get_the_excerpt(); ?></p>
                                 <div class="top-furniture-shop-item-link">
-                                    <a href="<?php esc_url(home_url('store')); ?>" class="c-link c-link--arrow"><?php echo get_the_title(); ?>を見る</a>
+                                    <a href="<?php echo esc_url(home_url('store')); ?>" class="c-link c-link--arrow"><?php echo get_the_title(); ?>を見る</a>
                                 </div>
                                 <?php wp_reset_postdata(); ?>
                             </div>
@@ -146,7 +146,7 @@
                                 <h3 class="top-furniture-shop-item-title top-furniture-shop-item-title--english">online store</h3>
                                 <p class="top-furniture-shop-item-desctription">KAGUの家具はオンラインストアでもご購入いただけます。</p>
                                 <div class="top-furniture-shop-item-link">
-                                    <a href="<?php echo get_template_directory_uri(); ?>/store/" class="c-link c-link--arrow">オンラインストアを見る</a>
+                                    <a href="https://example.com" class="c-link c-link--arrow" target=”_blank”>オンラインストアを見る</a>
                                 </div>
                             </div>
                         </section>
