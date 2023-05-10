@@ -3,7 +3,7 @@ import imagemin from 'gulp-imagemin';
 import cleanCSS from 'gulp-clean-css';
 
 const minImg = () => {
-    return gulp.src('src/img/*')
+    return gulp.src('src/img/*/*')
     .pipe(imagemin())
     .pipe(gulp.dest('img'));
 }
