@@ -1173,6 +1173,12 @@ page > store > shop
 
 .shop-place {
   margin-top: 60px;
+  scroll-margin-top: 64px;
+}
+@media screen and (min-width: 960px) {
+  .shop-place {
+    scroll-margin-top: 84px;
+  }
 }
 .shop-place:first-child {
   margin-top: 0;

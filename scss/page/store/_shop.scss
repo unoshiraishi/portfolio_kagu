@@ -116,6 +116,11 @@ page > store > shop
 }
 .shop-place {
     margin-top: 60px;
+    scroll-margin-top: 64px;
+
+    @include g.mq() {
+        scroll-margin-top: 84px;
+    }
 
     &:first-child {
         margin-top: 0;
